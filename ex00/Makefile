@@ -6,16 +6,16 @@
 #    By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/03 16:48:22 by bsampaio          #+#    #+#              #
-#    Updated: 2026/08/03 18:47:00 by bsampaio         ###   ########.fr        #
+#    Updated: 2026/08/03 19:12:53 by bsampaio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 NAME = Animal
-SRCS = main.cpp Animal.cpp
+SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp
 OBJS = $(SRCS:.cpp=.o)
-HEADER = Animal.hpp
+HEADER = Animal.hpp Dog.hpp Cat.hpp
 
 all: $(NAME)
 

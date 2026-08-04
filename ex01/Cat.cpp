@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 18:54:43 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 19:18:04 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 19:35:42 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,14 @@ Cat::~Cat()
 void Cat::makeSound(void) const
 {
     std::cout << "* Miau, miau! *\n";
+}
+
+void Cat::setIdea(int index, std::string idea)
+{
+    this->brain->setIdea(index, idea);
+}
+
+std::string Cat::getIdea(int index) const
+{
+    return (this->brain->getIdea(index));
 }

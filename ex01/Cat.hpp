@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:55:23 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 17:51:14 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 19:36:54 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ class Cat: public Animal
         Cat& operator=(const Cat& obj);
         ~Cat();
         void makeSound(void) const;
+        void setIdea(int index, std::string idea);
+        std::string getIdea(int index) const;
 };
 
 

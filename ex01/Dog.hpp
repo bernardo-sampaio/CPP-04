@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:54:42 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 17:51:43 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 19:33:55 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,9 @@ class Dog: public Animal
         Dog& operator=(const Dog& obj);
         ~Dog();
         void makeSound(void) const;
+        void setIdea(int index, std::string idea);
+        std::string getIdea(int index) const;
+        
 };
 
 #endif

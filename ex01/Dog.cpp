@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 19:08:07 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 19:17:56 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 19:36:03 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,13 @@ Dog::~Dog()
 void Dog::makeSound(void) const
 {
     std::cout << "* Au, au! *\n";
+}
+
+void Dog::setIdea(int index, std::string idea)
+{
+    this->brain->setIdea(index, idea);
+}
+std::string Dog::getIdea(int index) const
+{
+    return (this->brain->getIdea(index));
 }

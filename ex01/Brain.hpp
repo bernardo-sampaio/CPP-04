@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 17:44:07 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 18:23:33 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 19:31:34 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ class Brain
         Brain(const Brain& obj);
         Brain& operator=(const Brain& obj);
         ~Brain();
+        void setIdea(int index, std::string idea);
+        std::string getIdea(int index) const;
 };
 
 #endif

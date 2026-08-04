@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 19:08:07 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 10:08:01 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 11:23:12 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ Dog::Dog(): Animal()
 }
 Dog::Dog(const Dog& obj): Animal(obj)
 {
-    this->type = obj.type;
     std::cout<<"Dog "<<this->type<<" type copy constructor called\n";
 }
 Dog& Dog::operator=(const Dog& obj)

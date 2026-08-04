@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 18:54:43 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 10:08:15 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 11:23:03 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ Cat::Cat(): Animal()
 }
 Cat::Cat(const Cat& obj): Animal(obj)
 {
-    this->type = obj.type;
     std::cout<<"Cat "<<this->type<<" type copy constructor called\n";
 }
 Cat& Cat::operator=(const Cat& obj)

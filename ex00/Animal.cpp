@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 18:10:11 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/03 18:47:32 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 09:48:34 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Animal::Animal()
 {
-    this->type = "Mammal";
+    this->type = "Species";
     std::cout<<"Animal "<<this->type<<" type default constructor called\n";   
 }
 Animal::Animal(const Animal& obj)
@@ -38,4 +38,9 @@ Animal::~Animal()
 std::string Animal::getType(void) const
 {
     return this->type;
+}
+
+void Animal::makeSound(void) const
+{
+    std::cout << "* Undefined species sound *\n";
 }

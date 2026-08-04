@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:52:48 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/03 19:18:23 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 10:16:06 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,9 @@ class Animal
         Animal();
         Animal(const Animal& obj);
         Animal& operator=(const Animal& obj);
-        ~Animal();
+        virtual ~Animal();
         std::string getType(void) const;
+        virtual void makeSound(void) const;
         
 };
 

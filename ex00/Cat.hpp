@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:55:23 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/03 19:02:25 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 10:09:12 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class Cat: public Animal
         Cat(const Cat& obj);
         Cat& operator=(const Cat& obj);
         ~Cat();
+        void makeSound(void) const;
 };
 
 

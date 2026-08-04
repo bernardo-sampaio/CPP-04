@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 18:36:25 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 11:47:45 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 11:49:52 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int main()
     j->makeSound();
     meta->makeSound();
 
+    std::cout<<"-------------------Destructor-------------------\n";
     delete meta;
     delete i;
     delete j;
@@ -38,6 +39,7 @@ int main()
     std::cout << wrongCat->getType() << " " << std::endl;
     wrongCat->makeSound();
     wrong->makeSound();
+    
     std::cout<<"-------------------Destructor-------------------\n";
     delete wrong;
     delete wrongCat;
@@ -53,10 +55,10 @@ int main()
     tom->makeSound();
     mutt->makeSound();
     
+    std::cout<<"-------------------Destructor-------------------\n";
     delete mutt;
     delete rex;
     delete tom;
-
-    std::cout<<"\n\n==================== More Test ====================\n\n";
+    
     return 0;
 }

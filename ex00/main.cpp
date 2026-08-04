@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 18:36:25 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 11:24:31 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 11:47:45 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,22 +60,3 @@ int main()
     std::cout<<"\n\n==================== More Test ====================\n\n";
     return 0;
 }
-
-
-/*
-int main(void)
-{
-    std::cout<<"==================== Constructor ====================\n";
-    Cat cat;
-    Dog dog;
-
-    std::cout<<"\n====================Test Dog====================\n";
-    std::cout<<"Their type is: "<<dog.getType()<<std::endl;
-    dog.makeSound();
-    std::cout<<"\n====================Test Cat====================\n";
-    std::cout<<"Their type is: "<<cat.getType()<<std::endl;
-    cat.makeSound();
-
-    std::cout<<"\n==================== Destructor ====================\n";
-    return (0);
-}*/

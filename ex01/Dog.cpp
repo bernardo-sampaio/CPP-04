@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 19:08:07 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 19:15:35 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/04 19:17:56 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ Dog& Dog::operator=(const Dog& obj)
 
 Dog::~Dog()
 {
-    delete this->brain;
     std::cout<<this->type<<" type destructor called\n";
+    delete this->brain;
 }
 
 void Dog::makeSound(void) const

@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 18:54:43 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 19:35:42 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/05 15:17:04 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ Cat& Cat::operator=(const Cat& obj)
 
 Cat::~Cat()
 {
-    std::cout<<this->type<<" type destructor called\n";
     delete this->brain;
+    std::cout<<this->type<<" type destructor called\n";
 }
 
 void Cat::makeSound(void) const

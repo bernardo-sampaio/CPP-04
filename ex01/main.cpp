@@ -6,7 +6,7 @@
 /*   By: bsampaio <bsampaio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 18:36:25 by bsampaio          #+#    #+#             */
-/*   Updated: 2026/08/04 19:40:43 by bsampaio         ###   ########.fr       */
+/*   Updated: 2026/08/05 15:14:35 by bsampaio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,22 @@ int main()
     for (int k = 4 / 2; k < 4; k++)
         mutt[k] = new Cat();
     
-    for (int k = 0; k < (4 / 2); k++)
+    for (int k = 0; k < 4; k++)
         delete mutt[k];
-    for (int k = 4 / 2; k < 4; k++)
-        delete mutt[k];
-    std::cout<<"\n\n================ My Test ================\n";
-    Dog max;
-    Dog rex;
 
-    max = rex;
+    std::cout<<"\n\n================ My Deep Copy Test ================\n";
+    Dog rex;
+    rex.setIdea(0, "I want to eat.");
+    Dog max(rex);
+    max.setIdea(0, "I want to sleep.");
     std::cout<<"\n===================Ideas===================\n";
-    max.setIdea(0, "Max wants to eat");
-    std::cout<<max.getIdea(0)<<" and Mex want to"<<rex.getIdea(0)<<std::endl;
+    
+    std::cout<<"Max say: "<<max.getIdea(0)<<std::endl;
+    std::cout<<"Rex say: "<<rex.getIdea(0)<<std::endl;
+    max.setIdea(1, "I want to play.");
+    rex.setIdea(1, "I want to sleep.");
+    std::cout<<"Max say: "<<max.getIdea(1)<<std::endl;
+    std::cout<<"Rex say: "<<rex.getIdea(1)<<std::endl;
+
     return 0;
 }
